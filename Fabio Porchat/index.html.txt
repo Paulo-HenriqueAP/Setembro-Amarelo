@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabio Superaçao</title>
+    <link rel=" " href=" "> 
 </head>
 <body>
-    <h1>edita aqui gente</h1>
+    <h1><b>Fabio Porchat</b></h1>
+    <img src="fabioporchat.img">
+    <h3><p>Fabio Porchat é um conhecido humorista e apresentador brasileiro, e ele tem sido bastante aberto sobre suas experiências pessoais e desafios. Em uma entrevista de 2016, ele revelou que passou por um momento muito difícil e enfrentou pensamentos suicidas durante um período de grande estresse e depressão.</p>
+
+<p>Porchat discutiu como a pressão e o desgaste emocional acumulado o levaram a uma crise, e ele falou sobre a importância de buscar ajuda profissional e apoio. Ele usou sua experiência para aumentar a conscientização sobre a saúde mental e a necessidade de tratamento adequado para questões como depressão e ansiedade. Seu relato é um exemplo de como a vulnerabilidade e a abertura podem ajudar a desestigmatizar conversas sobre saúde mental e encorajar outras pessoas a procurar ajuda quando necessário.</p></h3>
+
+
+
+
+
+
 </body>
 </html>
