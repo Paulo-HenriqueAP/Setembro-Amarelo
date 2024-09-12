@@ -1,4 +1,12 @@
-document.addEventListener('mousemove', function(event) {
+function menuON_OFF() {
+    document.getElementById("menu").classList.toggle("show")
+    console.log("OI")
+    document.getElementById("page").classList.toggle("onFocus")
+}
+
+
+
+/*document.addEventListener('mousemove', function(event) {
     const menu = document.getElementById('menu');
     const mouseX = event.clientX;
     
@@ -21,4 +29,4 @@ document.getElementById('menu').addEventListener('mouseout', function(event) {
         this.classList.remove('show');
     }
 });//fecha menu quando mouse sai
-
+*/
