@@ -1,10 +1,42 @@
 function menuON_OFF() {
     document.getElementById("menu").classList.toggle("show")
-    console.log("OI")
     document.getElementById("page").classList.toggle("onFocus")
 }
 
+function showPeopleText(event) {
+    let textoPessoa = document.getElementById("peopleText")
+    switch (event.target.id) {
+        case "demi":
+            textoPessoa.innerHTML = `
+            <h1><b>Demi Lovato</b></h1>
+              <p>Demi Lovato revelou que teve pensamentos suicidas pela primeira vez aos 7 anos. Em entrevista ao programa Dr. Phil, a cantora – que levanta bandeiras em prol da saúde mental – confessou que, na infância, via no suicídio uma "saída" para seus problemas. "Eles eram impulsionados pela tristeza, solidão e depressão", afirmou ela.</p>
+              <p>Hoje, Demi afirma que a depressão tem ido embora aos poucos e, na última sexta-feira, ela comemorou seis anos de sobriedade com uma publicação no Instagram: "Uma grande parte da minha recuperação foi aprender a me amar", escreveu ela.</p>
+            `;
+            break;
+        case "fabio":
+            textoPessoa.innerHTML = `
+  <h1><b>Fabio Porchat</b></h1>
+    <p>Fabio Porchat é um conhecido humorista e apresentador brasileiro, e ele tem sido bastante aberto sobre suas experiências pessoais e desafios. Em uma entrevista de 2016, ele revelou que passou por um momento muito difícil e enfrentou pensamentos suicidas durante um período de grande estresse e depressão.</p>
+    <p>Porchat discutiu como a pressão e o desgaste emocional acumulado o levaram a uma crise, e ele falou sobre a importância de buscar ajuda profissional e apoio. Ele usou sua experiência para aumentar a conscientização sobre a saúde mental e a necessidade de tratamento adequado para questões como depressão e ansiedade. Seu relato é um exemplo de como a vulnerabilidade e a abertura podem ajudar a desestigmatizar conversas sobre saúde mental e encorajar outras pessoas a procurar ajuda quando necessário.</p>
 
+`;
+            break;
+        case "taina":
+            textoPessoa.innerHTML = `
+  <h1><b>Tainã de Oliveira Silva</b></h1>
+    <p>A enfermeira obstetra Tainã de Oliveira Silva, 26 anos, viu sua vida ser tomada pela tristeza profunda há cinco anos. 
+    Acometida por um quadro de depressão, ela tomou uma alta dose de tranquilizantes, desmaiou e foi internada em um hospital de Salvador.
+    "Eu não quis tirar minha vida, mas me livrar da dor do que estava sentindo", relata a jovem, que foi diagnosticada com depressão moderada.</p>
+    <p>Ao ser diagnosticada com depressão, ela foi acompanhada por um psiquiatra e passou a tomar medicamentos antidepressivos durante três meses.
+    Também voltou a frequentar o centro espírita, buscando apoio de uma psicóloga comportamental e espiritual.</p>
+    <p>Recuperada, Tainã casou e hoje celebra a vitória de conseguir viver tranquilamente. Ela não toma mais medicamentos antidepressivos e mantém um amor incondicional aos cachorrinhos de estimação, que também a ajudaram a recuperar a vontade de viver.</p>
+`;
+
+
+
+
+    }
+}
 
 /*document.addEventListener('mousemove', function(event) {
     const menu = document.getElementById('menu');

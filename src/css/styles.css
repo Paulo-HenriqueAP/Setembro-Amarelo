@@ -6,6 +6,16 @@ body {
     position: absolute;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
+button :hover {
+    cursor: pointer;
+    background-color: white;
+}
+
 .intro {
     text-align: center;
 
@@ -27,13 +37,18 @@ h1 {
 
 #menu {
     position: absolute;
-    left: -230px;/*tamanho*/
+    left: -230px;
+    /*tamanho*/
     top: 0;
-    width: 230px;/*largura*/
+    width: 230px;
+    /*largura*/
     height: 100%;
-    background-color: #161616; /*cor*/
-    color: #fff; /*cor do texto*/
-    transition: left 0.3s ease; /*transição*/
+    background-color: #161616;
+    /*cor*/
+    color: #fff;
+    /*cor do texto*/
+    transition: left 0.3s ease;
+    /*transição*/
     border-bottom-right-radius: 5px;
     min-height: 100vh;
 }
@@ -112,7 +127,7 @@ h1 {
     background-color: #bb922d;
     top: 0;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 #hideMenu {
@@ -126,4 +141,34 @@ h1 {
 
 .onFocus {
     filter: blur(4px);
+}
+
+#peoplesHub {
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: max-content;
+}
+
+.peopleIMG {
+    height: 80px;
+    border-radius: 5px;
+}
+
+#peopleText {
+    background-color: #ffd102;
+    padding: 2%;
+    margin: 10px;
+    color: #161616;
+    border-radius: 3px;
+}
+
+.peopleButton {
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px;
+    height: 0px;
 }
