@@ -214,3 +214,7 @@ h1 {
     border: 1px solid;
     border-color: #a46604;
 }
+
+.hidden {
+    display: none;
+}
