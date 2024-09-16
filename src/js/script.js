@@ -8,7 +8,7 @@ function menuON_OFF() {
 };
 
 const textos = [
-    "demi", "fabio", "taina"
+    "demi", "fabio", "taina", "glaucia"
 ];
 
 //const temasAmarelos = [];
@@ -78,6 +78,7 @@ document.getElementById("page").addEventListener("click", function () {
 })
 
 function fecharHistorias() {
+    document.getElementById("peopleVideo").classList.add("hidden");
     textoPessoa.textContent = "Selecione alguém ↴";
 };
 

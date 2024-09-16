@@ -218,3 +218,7 @@ h1 {
 .hidden {
     display: none;
 }
+
+#videoSet {
+    width: 50%;
+}
