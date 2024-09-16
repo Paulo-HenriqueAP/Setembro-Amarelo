@@ -161,10 +161,24 @@ h1 {
     height: max-content;
 }
 
+#test1, #test2, #test3, #test4{
+    display: inline-block;
+  }
+
+#botoesParaTexto {
+    position: absolute;
+  
+    text-align: center;
+    align-items: center;
+    transform: translateX( -50%);
+    left: 50%;
+    width: 100%;
+}
 .peopleIMG {
     height: 80px;
     border-radius: 30px;
     padding: 5px;
+    width: 80px;
 }
 
 #peopleText {
