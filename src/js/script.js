@@ -58,7 +58,9 @@ function showPeopleText(event) {
     Também voltou a frequentar o centro espírita, buscando apoio de uma psicóloga comportamental e espiritual.</p>
     <p>Recuperada, Tainã casou e hoje celebra a vitória de conseguir viver tranquilamente. Ela não toma mais medicamentos antidepressivos e mantém um amor incondicional aos cachorrinhos de estimação, que também a ajudaram a recuperar a vontade de viver.</p>
 `;
+break;
         case "glaucia":
+            textoPessoa.innerHTML ='<h1><b>Glaucia</b></h1>'
             document.getElementById("glaucia").classList.add("selecionado");
             document.getElementById("peopleVideo").classList.remove("hidden");
             break;
