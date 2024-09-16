@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #ffd102;
     color: #333;
     position: absolute;
@@ -13,7 +18,6 @@ li {
 
 button :hover {
     cursor: pointer;
-    background-color: white;
 }
 
 .intro {
@@ -51,11 +55,13 @@ h1 {
     /*transição*/
     border-bottom-right-radius: 5px;
     min-height: 100vh;
+    overflow: auto;
 }
 
 #menu.show {
     left: 0;
     position: fixed;
+    box-shadow: 5px 5px 30px 5px black;
 }
 
 #menu ul {
@@ -127,7 +133,9 @@ h1 {
     background-color: #bb922d;
     top: 0;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
+    font-size: x-large;
+    cursor: pointer;
 }
 
 #hideMenu {
@@ -140,8 +148,9 @@ h1 {
 }
 
 .onFocus {
-    filter: blur(4px);
+    filter: blur(5px);
 }
+
 
 #peoplesHub {
     background-color: white;
@@ -154,7 +163,8 @@ h1 {
 
 .peopleIMG {
     height: 80px;
-    border-radius: 5px;
+    border-radius: 30px;
+    padding: 5px;
 }
 
 #peopleText {
@@ -163,12 +173,43 @@ h1 {
     margin: 10px;
     color: #161616;
     border-radius: 3px;
+    text-align: center;
+    font-size: medium;
+    cursor: text;
 }
 
 .peopleButton {
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 0;
     margin: 5px;
     height: 0px;
+}
+
+#contato {
+    position: relative;
+    width: min-content;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    height: 250px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.selecionado {
+    background-color: #ffd102;
+}
+
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8,
+#text9 {
+    border: 1px solid;
+    border-color: #a46604;
 }

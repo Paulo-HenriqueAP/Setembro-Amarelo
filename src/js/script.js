@@ -1,12 +1,33 @@
+let textoPessoa = document.getElementById("peopleText")
 function menuON_OFF() {
-    document.getElementById("menu").classList.toggle("show")
-    document.getElementById("page").classList.toggle("onFocus")
-}
+    document.getElementById("menu").classList.toggle("show");
+    document.getElementById("page").classList.toggle("onFocus");
+
+    document.getElementById("menu").classList.contains("show") ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
+
+};
+
+const textos = [
+    "demi", "fabio", "taina"
+];
+
+//const temasAmarelos = [];
+
+function textoAleatorio() {
+    textoA = textos[Math.floor(Math.random() * textos.length)]
+    showPeopleText({ target: { id: textoA } });
+};
+
+textoAleatorio();
 
 function showPeopleText(event) {
-    let textoPessoa = document.getElementById("peopleText")
+    document.getElementById("demi").classList.remove("selecionado");
+    document.getElementById("fabio").classList.remove("selecionado");
+    document.getElementById("taina").classList.remove("selecionado");
+
     switch (event.target.id) {
         case "demi":
+            document.getElementById("demi").classList.add("selecionado");
             textoPessoa.innerHTML = `
             <h1><b>Demi Lovato</b></h1>
               <p>Demi Lovato revelou que teve pensamentos suicidas pela primeira vez aos 7 anos. Em entrevista ao programa Dr. Phil, a cantora – que levanta bandeiras em prol da saúde mental – confessou que, na infância, via no suicídio uma "saída" para seus problemas. "Eles eram impulsionados pela tristeza, solidão e depressão", afirmou ela.</p>
@@ -14,6 +35,7 @@ function showPeopleText(event) {
             `;
             break;
         case "fabio":
+            document.getElementById("fabio").classList.add("selecionado");
             textoPessoa.innerHTML = `
   <h1><b>Fabio Porchat</b></h1>
     <p>Fabio Porchat é um conhecido humorista e apresentador brasileiro, e ele tem sido bastante aberto sobre suas experiências pessoais e desafios. Em uma entrevista de 2016, ele revelou que passou por um momento muito difícil e enfrentou pensamentos suicidas durante um período de grande estresse e depressão.</p>
@@ -22,6 +44,7 @@ function showPeopleText(event) {
 `;
             break;
         case "taina":
+            document.getElementById("taina").classList.add("selecionado");
             textoPessoa.innerHTML = `
   <h1><b>Tainã de Oliveira Silva</b></h1>
     <p>A enfermeira obstetra Tainã de Oliveira Silva, 26 anos, viu sua vida ser tomada pela tristeza profunda há cinco anos. 
@@ -31,12 +54,21 @@ function showPeopleText(event) {
     Também voltou a frequentar o centro espírita, buscando apoio de uma psicóloga comportamental e espiritual.</p>
     <p>Recuperada, Tainã casou e hoje celebra a vitória de conseguir viver tranquilamente. Ela não toma mais medicamentos antidepressivos e mantém um amor incondicional aos cachorrinhos de estimação, que também a ajudaram a recuperar a vontade de viver.</p>
 `;
-
-
-
-
     }
 }
+
+document.getElementById("page").addEventListener("click", function () {
+    if (document.getElementById("menu").classList.contains("show")) {
+        document.getElementById("menu").classList.remove("show");
+        document.getElementById("page").classList.remove("onFocus");
+        document.body.style.overflow = "auto"
+    }
+
+})
+
+function fecharHistorias() {
+    textoPessoa.textContent = "Selecione alguém ↴";
+};
 
 /*document.addEventListener('mousemove', function(event) {
     const menu = document.getElementById('menu');
