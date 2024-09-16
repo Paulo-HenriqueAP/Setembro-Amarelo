@@ -220,5 +220,7 @@ h1 {
 }
 
 #videoSet {
-    width: 50%;
+    width: 90%;
+    height: 315px;
+    border-radius: 5px;
 }
