@@ -30,8 +30,10 @@ function showPeopleText(event) {
             document.getElementById("demi").classList.add("selecionado");
             textoPessoa.innerHTML = `
             <h1><b>Demi Lovato</b></h1>
-              <p>Demi Lovato revelou que teve pensamentos suicidas pela primeira vez aos 7 anos. Em entrevista ao programa Dr. Phil, a cantora – que levanta bandeiras em prol da saúde mental – confessou que, na infância, via no suicídio uma "saída" para seus problemas. "Eles eram impulsionados pela tristeza, solidão e depressão", afirmou ela.</p>
-              <p>Hoje, Demi afirma que a depressão tem ido embora aos poucos e, na última sexta-feira, ela comemorou seis anos de sobriedade com uma publicação no Instagram: "Uma grande parte da minha recuperação foi aprender a me amar", escreveu ela.</p>
+              <p>Demi Lovato revelou que teve pensamentos suicidas pela primeira vez aos 7 anos. Em entrevista ao programa Dr. Phill, a cantora – que levanta bandeiras em prol da saúde mental – confessou que, na infância, via no suicídio uma “saída” para seus problemas. “Eles eram impulsionados pela tristeza, solidão e depressão”, afirmou ela.</p>
+              <p>Ela associa os sentimentos a “questões mal resolvidas” em relação ao pai biológico, que abandou a família quando a cantora era criança. Patrick Lovato morreu em 2013, e sofria de distúrbios mentais. “Agora que eu cresci e passei pelo luto de sua morte, consegui entender que ele era doente e não me abandonou porque queria. Eu pude superar a perda dele e entender onde tudo deu errado”.</p>
+              <p>Em 2010, a ex-estrela da Disney deu entrada em um centro de reabilitação por problemas com álcool e drogas. Desde a infância, ela luta contra distúrbios alimentares, depressão e bipolaridade, e aproveita sua fama e visibilidade para conscientizar as pessoas quanto ao cuidado com a saúde mental. Pouco menos de três anos depois da internação, ela lançou o livro de autoajuda Demi Lovato: 365 Dias do Ano, com frases motivacionais e reflexões sobre a vida.</p>
+              <p>Hoje, Demi afirma que a depressão tem ido embora aos poucos e, na última sexta-feira, ela comemorou seis anos de sobriedade com publicação no Instagram: “Uma grande parte da minha recuperação foi aprender a me amar”, escreveu ela.</p>
             `;
             break;
         case "fabio":
