@@ -40,10 +40,10 @@
     }
 }
 
-/*Aqui -> @media (max-height: 768px) {
+/*Aqui -> @media (max-width: 600px) {
 } mudamos os atributos que ficarão visiveis somente na versão mobile orizontal do site 
 */
-@media (max-height: 768px) {
+@@media (max-width: 600px) {
     .downloadsIframe {
         display: none;
     }
