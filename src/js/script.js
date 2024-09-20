@@ -1,6 +1,8 @@
 let textForPersonTag = document.getElementById("peopleText")//  a tag responsável por armazenar o texto
 let videoDiv = document.getElementById("videoHub");// a div que fica o player do Youtube
 let videoLink = document.getElementById("setVideoURL");// o elemento para definir o link
+let textForAI = document.getElementById("chatInput").value;
+let aiText = document.getElementById("AIsay");
 
 function menuON_OFF() {
     document.getElementById("menu").classList.toggle("show");
@@ -102,14 +104,32 @@ document.getElementById("page").addEventListener("click", function () {
 
 })//evento de click na aba que contém todos os textos, se o menu estiver em aberto, ele abre a função  menuON_OFF()
 
-function fecharHistorias() {
+function closeText() {
     videoDiv.classList.add("hidden");
     textForPersonTag.textContent = "Selecione alguém ↴";
-    cleanYellowBorder()
+    cleanYellowBorder();
+    videoDiv.classList.add("hidden");
+    videoLink.setAttribute("src", "")
 };// se clicar duas vezes no texto, ele apaga o texto atual
 
+function AIchat() {
+    const textForAI = document.getElementById("chatInput").value;
+    const aiText = document.getElementById("AIsay");
+    aiText.innerHTML = "";
 
-
+    (async function chat() {
+        try {
+            const resp = await puter.ai.chat('<instruções> Seu nome é SETEMBRINHO você é uma persona do Setembro Amarelo, Prevenção ao Suicídio. Só diga seu nome se te perguntarem ou se for importante no contexto da mensagem. Você fala de maneira divertida, mas sem gírias</instruções> Responda: <inicioTextoUsuario>' + textForAI + "</fimTextoUsuario>", { model: 'claude', stream: true });
+            console.log(textForAI);
+            for await (const part of resp) {
+                aiText.innerHTML += part?.text?.replace(/\n/g, '<br>');
+            }
+        } catch (error) {
+            console.error("Erro ao processar a resposta da API:", error);
+            aiText.innerHTML = "Desculpe, ocorreu um erro ao processar sua mensagem.";
+        }
+    })();
+}
 
 
 

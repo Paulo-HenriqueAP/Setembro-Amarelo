@@ -1,0 +1,68 @@
+/*Aqui -> @media (max-width:480px) {
+} mudamos os atributos que ficarão visiveis somente na versão mobile vertical do site 
+*/
+@media (max-width:480px) {
+    #mainTitle {
+        font-size: x-large;
+    }
+
+    .content img {
+        max-width: 90%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0%;
+        margin-top: 30px;
+    }
+
+    .downloadsIframe {
+        display: none;
+    }
+
+    #text10 ul {
+        margin-right: 50px;
+    }
+
+    #text10 a {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #text10 ul>div {
+        box-shadow: 1px 1px 1px 1px;
+        background-color: #ffd102;
+    }
+
+    #setVideoURL {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/*Aqui -> @media (max-height: 768px) {
+} mudamos os atributos que ficarão visiveis somente na versão mobile orizontal do site 
+*/
+@media (max-height: 768px) {
+    .downloadsIframe {
+        display: none;
+    }
+
+    #text10 ul {
+        margin-right: 50px;
+    }
+
+    #text10 a {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #text10 ul>div {
+        box-shadow: 1px 1px 1px 1px;
+        background-color: #ffd102;
+    }
+    #setVideoURL {
+      width: auto;
+      height: 100%;
+    }
+}
