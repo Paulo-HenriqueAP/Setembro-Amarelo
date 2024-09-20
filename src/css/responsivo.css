@@ -1,7 +1,7 @@
-/*Aqui -> @media (max-width:480px) {
+/*Aqui -> @media (max-height:420px) {
 } mudamos os atributos que ficarão visiveis somente na versão mobile vertical do site 
 */
-@media (max-width:480px) {
+@media (max-height:420px) {
     #mainTitle {
         font-size: x-large;
     }
