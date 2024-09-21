@@ -40,14 +40,14 @@
                         difíceis, ninguém está sozinho.</p>
                 </h4>
             </div>
-            <div style="margin: 5px; text-align: center; background-color: white; border-radius: 6px;">
-                <p id="tituloSet">Olá! Eu sou SETEMBRINHO(A). Me pergunte algo</p>
-                <p id="AIsay"></p>
+            <div style="margin: 5px; text-align: center;" id="AIchat">
+                <h3 id="tituloSet">Olá! Eu sou SETEMBRINHO(A). Me pergunte algo</h3>
+                <p id="AIsay" style="background-color: white; color: black; border-radius: 6px;"></p>
                 <img src="src/imgs/people/personaChat.png" alt="" style="cursor: pointer; width: 150px;">
                 <br>
                 <textarea id="chatInput" style="height: 100px; text-align: center;"></textarea>
                 <br>
-                <button onclick="AIchat()">perguntar</button>
+                <button onclick="AIchat()" style="padding: 6px; cursor: pointer;">perguntar</button>
             </div>
 
             <div id="text2">
@@ -371,6 +371,7 @@
             <br>
             <li><a href="#page" onclick="menuON_OFF()">Topo</a></li>
             <li><a href="#text1" onclick="menuON_OFF()">Bem-vindo</a></li>
+            <li><a href="#AIchat" onclick="menuON_OFF()">Setembrinho(A)</a></li>
             <li><a href="#text2" onclick="menuON_OFF()">Como e Por Que começou</a></li>
             <li><a href="#text3" onclick="menuON_OFF()">Objetivos e metas</a></li>
             <li><a href="#text4" onclick="menuON_OFF()">Organizadores</a></li>

@@ -119,14 +119,13 @@ function AIchat() {
 
     (async function chat() {
         try {
-            const resp = await puter.ai.chat('<instruções> Seu nome é SETEMBRINHO você é uma persona do Setembro Amarelo, Prevenção ao Suicídio. Só diga seu nome se te perguntarem ou se for importante no contexto da mensagem. Você fala de maneira divertida, mas sem gírias</instruções> Responda: <inicioTextoUsuario>' + textForAI + "</fimTextoUsuario>", { model: 'claude', stream: true });
+            const resp = await puter.ai.chat('<instruções> Seu nome é SETEMBRINHO você é uma persona do Setembro Amarelo, Prevenção ao Suicídio. Só diga seu nome se te perguntarem ou se for importante no contexto da mensagem. Já tem um título te apresentando, não diga "Olá" toda hora</instruções> Responda: <inicioTextoUsuario>' + textForAI + "</fimTextoUsuario>", { model: 'claude', stream: true });
             console.log(textForAI);
             for await (const part of resp) {
                 aiText.innerHTML += part?.text?.replace(/\n/g, '<br>');
             }
         } catch (error) {
-            console.error("Erro ao processar a resposta da API:", error);
-            aiText.innerHTML = "Desculpe, ocorreu um erro ao processar sua mensagem.";
+            aiText.innerHTML = "Desculpe, ocorreu um erro inesperado. Não foi possível processar sua solicitação no momento. Por favor, tente novamente mais tarde ou entre em contato com o suporte se o problema persistir. Lembre-se, sua saúde mental é importante e existem pessoas dispostas a ajudar. Se precisar de apoio imediato, não hesite em buscar ajuda profissional ou ligar para o CVV (Centro de Valorização da Vida) no número 188.";
         }
     })();
 }
