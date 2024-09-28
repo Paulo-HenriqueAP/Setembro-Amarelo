@@ -267,11 +267,11 @@ h1 {
     margin: 5px;
 }
 
-.downloadsIframe {
+/*.downloadsIframe {
     width: 300px;
     height: 300px;
     border-radius: 6px;
-}
+}*/
 
 #text10 ul {
     display: flex;
