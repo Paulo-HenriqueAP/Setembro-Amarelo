@@ -39,9 +39,12 @@
                         difíceis, ninguém está sozinho.</p>
                 </h4>
             </div>
+            <!--
             <div style="margin: 5px; text-align: center;" id="AIchat">
                 <h3 id="tituloSet">Eu sou a SETEMBRINHIA. Me pergunte algo!</h3>
-                <p id="AIsay" style="background-color: white; color: black; border-radius: 6px; max-height: 50vh; overflow: auto;"></p>
+                <p id="AIsay"
+                    style="background-color: white; color: black; border-radius: 6px; max-height: 50vh; overflow: auto;">
+                </p>
                 <img src="src/imgs/people/FofinPersona.png" alt=""
                     style="cursor: pointer; width: 200px; border-radius: 10px;">
                 <br>
@@ -50,6 +53,9 @@
                 <br>
                 <button onclick="AIchat()" style="padding: 6px; cursor: pointer;">perguntar</button>
             </div>
+            -->
+            <df-messenger intent="WELCOME" chat-title="Setembrinha" agent-id="d64e8aeb-6276-4f0a-8e3a-fc54bcd8adc3"
+                language-code="pt-br" id="diaBot"></df-messenger>
             <div id="text2">
                 <h1>Como tudo começou</h1>
                 <h4>
@@ -378,7 +384,8 @@
                 <div class="mainDiv" onclick="showPeopleText(event)">
                     <div>Maria</div>
                     <div style="margin-top: 10px;">
-                        <img id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg" alt="petalasdeliberdade.blogspot.com">
+                        <img id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg"
+                            alt="petalasdeliberdade.blogspot.com">
                     </div>
                 </div>
 
@@ -405,7 +412,7 @@
             <br>
             <li><a href="#page" onclick="menuON_OFF()">Topo</a></li>
             <li><a href="#text1" onclick="menuON_OFF()">Bem-vindo</a></li>
-            <li><a href="#AIchat" onclick="menuON_OFF()">SETEMBRINHIA</a></li>
+            <!-- <li><a href="#AIchat" onclick="menuON_OFF()">SETEMBRINHIA</a></li>-->
             <li><a href="#text2" onclick="menuON_OFF()">Como e Por Que começou</a></li>
             <li><a href="#text3" onclick="menuON_OFF()">Objetivos e metas</a></li>
             <li><a href="#text4" onclick="menuON_OFF()">Organizadores</a></li>
@@ -431,7 +438,8 @@
     </div>
 
 </body>
-<script src="https://js.puter.com/v2/"></script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<!--<script src="https://js.puter.com/v2/"></script>-->
 <script src="src/js/script.js"></script>
 
 </html>

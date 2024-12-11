@@ -1,8 +1,8 @@
 let textForPersonTag = document.getElementById("peopleText")//  a tag responsável por armazenar o texto
 let videoDiv = document.getElementById("videoHub");// a div que fica o player do Youtube
 let videoLink = document.getElementById("setVideoURL");// o elemento para definir o link
-let textForAI = document.getElementById("chatInput").value;
-let aiText = document.getElementById("AIsay");
+//let textForAI = document.getElementById("chatInput").value;
+//let aiText = document.getElementById("AIsay");
 
 function menuON_OFF() {
     document.getElementById("menu").classList.toggle("show");
@@ -157,6 +157,7 @@ function closeText() {
     videoLink.setAttribute("src", "")
 };// se clicar duas vezes no texto, ele apaga o texto atual
 
+/*
 function AIchat() {
     const textForAI = document.getElementById("chatInput").value;
     const aiText = document.getElementById("AIsay");
@@ -174,7 +175,7 @@ function AIchat() {
         }
     })();
 }
-
+*/
 
 
 
