@@ -307,3 +307,10 @@ h1 {
     transform: translateY(-50%);
     top: 60%;
 }
+
+df-messenger {
+    --df-messenger-bot-message: #ffd102;
+    --df-messenger-button-titlebar-color: #333;
+    --df-messenger-chat-background-color: whitesmoke;
+    --df-messenger-font-color: black;
+}

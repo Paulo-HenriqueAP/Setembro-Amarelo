@@ -15,7 +15,7 @@ function menuON_OFF() {
 const stuffsFromPeople = [
     {
         id: "demi", text: `
-        <h1><b>Demi Lovato</b></h1>
+        <h1>Demi Lovato</h1>
 
             <p>Demi Lovato revelou que teve pensamentos suicidas pela primeira vez aos 7 anos.
             Em entrevista ao programa Dr. Phill, a cantora – que levanta bandeiras em prol da saúde mental – confessou que, na infância, via no suicídio uma “saída” para seus problemas.
@@ -33,7 +33,7 @@ const stuffsFromPeople = [
 
     {
         id: "fabio", text: `
-        <h1><b>Fabio Porchat</b></h1>
+        <h1>Fabio Porchat</h1>
 
             <p>Fabio Porchat é um conhecido humorista e apresentador brasileiro, e ele tem sido bastante aberto sobre suas experiências pessoais e desafios.
             Em uma entrevista de 2016, ele revelou que passou por um momento muito difícil e enfrentou pensamentos suicidas durante um período de grande estresse e depressão.</p>
@@ -45,7 +45,7 @@ const stuffsFromPeople = [
 
     {
         id: "taina", text: `
-         <h1><b>Tainã de Oliveira Silva</b></h1>
+         <h1>Tainã de Oliveira Silva</h1>
 
             <p>A enfermeira obstetra Tainã de Oliveira Silva, 26 anos, viu sua vida ser tomada pela tristeza profunda há cinco anos. 
             Acometida por um quadro de depressão, ela tomou uma alta dose de tranquilizantes, desmaiou e foi internada em um hospital de Salvador.
@@ -61,7 +61,7 @@ const stuffsFromPeople = [
 
     {
         id: "mike", text: `
-        <h1><b>Mike Emme</b></h1>
+        <h1>Mike Emme</h1>
 
             <p>Conhecido como "Mustang Mike", era um jovem americano de Westminster, Colorado, apaixonado por seu carro Ford Mustang amarelo, que ele mesmo restaurou. Em 1994, aos 17 anos, Mike tirou a própria vida dentro de seu carro, deixando um bilhete para seus pais pedindo que não se culpassem</p>
             <p>A tragédia levou seus pais a iniciar uma campanha de conscientização sobre a prevenção do suicídio. No funeral de Mike, amigos e familiares distribuíram cartões presos a fitas amarelas com a mensagem "Se você precisar, peça ajuda". Esse gesto inspirou a criação da organização Yellow Ribbon, que promove a conscientização e prevenção do suicídio, ajudando milhares de pessoas ao redor do mundo.</p>
@@ -70,7 +70,8 @@ const stuffsFromPeople = [
 
     {
         id: "maria", text: `
-        <p>Meu nome é Maria, tenho 25 anos e já pensei inúmeras vezes em me suicidar. Nunca tentei de fato.</p>
+        <h1>Maria</h1>
+        <p>Já pensei inúmeras vezes em me suicidar. Nunca tentei de fato.</p>
         <p>Aos 8 anos, fui diagnosticada com depressão por um farmacêutico que me passou alguns remédios que tomei por alguns meses. Não foi o diagnóstico ideal, mas compreendam: eu morava na zona rural de uma cidade minúscula do interior, onde era difícil conseguir um médico, que dirá um psicólogo. Esse farmacêutico era a salvação da minha família, e foi para eles que correram quando viram a filha sempre chorando sem motivo. Naquela idade, me sentia muito sozinha, e lembro de incontáveis tardes em que fiquei no quintal pensando em formas de me matar.</p>
         <p>E assim eu cresci. Numa luta eterna entre a certeza de que não importava o que os outros pensavam de mim e a vontade de ser aceita, uma vontade comum especialmente na adolescência. Sempre fui tímida, e algumas vezes para me soltar nas festas, tomava bebidas alcoólicas. E eu me soltava, mas depois me arrependia das bobagens que fazia ou falava enquanto estava bêbada. Aí vinha a vergonha e o arrependimento, duas forças muito perigosas para quem já tinha pensamentos depressivos.</p>
         <p>A escola era um paraíso e um inferno. Um paraíso onde eu tinha amigos e sentia que era boa em alguma coisa, onde tinha um propósito para existir: aprender. Mas também era um inferno onde eu podia ser ignorada ou ridicularizada.</p>
@@ -83,12 +84,12 @@ const stuffsFromPeople = [
         <p>No último ano eu tive dias de muito choro, onde novamente a vontade de acabar comigo apareceu, mas essas duas décadas e meia de existência me ensinaram que esses momentos passam para mim. E quando dias difíceis chegam, eu deixo as lágrimas saírem e espero, penso em tudo o que há na Terra e que eu amo: a minha família, os meus livros, as histórias que eu ainda quero ler e escrever. Diversas vezes já esqueci momentaneamente minhas tristezas nas páginas de alguma trama que eu nunca viveria, mas que me distraiam. Mantenho um diário, pois me lembrar do que aconteceu nos anos anteriores me ajuda a ver o quanto já sobrevivi. Leio de tudo, pois tanto um livro de terror quanto um romance podem despertar emoções em mim; ouço todo tipo de música, pois cada uma pode mexer uma parte do meu corpo; experimento todos os tipos de sorvete e de comidas, ainda que tenha meus preferidos. Quando bate a ansiedade, penso no pior e no melhor que pode acontecer, e me lembro que o que importa é tentar (confesso que sempre tento ter um plano B).</p>
         <p>Eu não sei exatamente o que viverei nos próximos anos. Não sei se há uma cura definitiva. Como o Wolf de "A Montanha" tem como lema: sei que "haverá oscilações", sei que posso novamente me sentir muito triste e cansada, sei que posso ter semanas terríveis onde o fim pode parecer a saída mais fácil. Mas enquanto esses dias não chegam, vou me abastecendo de pedacinhos de felicidade, vou traçando objetivos que parecem irreais para o meu lado pessimista, mas que podem acontecer se eu for atrás nessa era cheia de possibilidades, tento me limpar dos pensamentos e sentimentos ruins e tecer uma corda, não como uma forca, mas como algo para me prender à vida.</p>
         <p>Se você conhece alguém que pode estar pensando em suicídio, esteja atento, esteja presente. Acompanhamento médico/psicológico pode ajudar muito, mas para isso é preciso que ele seja buscado. Se você cogita a possibilidade do suicídio, acredite que SEMPRE há outras alternativas, sempre há algo que valerá a pena viver para ver. Nossa vida importa, tem valor, temos um espaço no mundo, podemos fazer a diferença.</p>
-
         `
     },
 
     {
         id: "eriko", text: `
+        <h1>Eriko Kobayashi</h1>
         <p>Eu transformei minha experiência de tentativa de suicídio em um mangá chamado "Diário dos Meus Fracassos Cotidianos" para ajudar outras pessoas a entenderem que há uma saída para sentimentos ruins. Desde jovem, enfrentei problemas de saúde mental e dificuldades financeiras, o que me levou a tentar o suicídio várias vezes. Sofri bullying na escola e enfrentei dificuldades financeiras após terminar a universidade durante a "Era do Gelo do Emprego" no Japão. O suicídio é um problema global, com cerca de 800 mil pessoas morrendo por suicídio a cada ano. No Japão, o suicídio é uma das principais causas de morte entre crianças de 10 a 14 anos. Continuo a lutar contra pensamentos suicidas, mas desenvolvi estratégias para lidar com eles, como dormir bem, comer doces e evitar ficar sozinha. Acredito que compartilhar experiências pessoais pode ser uma forma útil de ajudar pessoas contemplando suicídio, além das táticas tradicionais como aconselhamento e medicação. A pandemia ensinou às pessoas a importância de não se esforçarem demais e de levar uma vida mais gentil com o corpo e a mente.</p>
         <p>Problemas com a minha saúde mental e dificuldades financeiras me levaram a tentar o suicídio algumas vezes desde que tinha 21 anos. Acho que meus problemas começaram na infância — sofri com violência e abusos quando cresci. No mangá, discuto meus "demônios", incluindo detalhes de minhas internações em hospital. As coisas chegaram a um ponto em que eu não conseguia mais dormir e tinha pesadelos constantes. Meus pais me levaram a vários médicos, mas nada parecia ajudar.</p>
         <p>Sofri com bullying na escola. Meu pai não trazia muito dinheiro para dentro de casa, então eu mal conseguia pagar pelos uniformes escolares. No inverno, eu tinha que vestir as mesmas roupas sempre, o que me transformou em um alvo fácil para as demais crianças.</p>
@@ -156,7 +157,6 @@ function closeText() {
     videoDiv.classList.add("hidden");
     videoLink.setAttribute("src", "")
 };// se clicar duas vezes no texto, ele apaga o texto atual
-
 /*
 function AIchat() {
     const textForAI = document.getElementById("chatInput").value;
