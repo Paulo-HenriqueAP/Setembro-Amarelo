@@ -62,9 +62,9 @@ const stuffsFromPeople = [
     {
         id: "mike", text: `
         <h1>Mike Emme</h1>
-
-            <p>Conhecido como "Mustang Mike", era um jovem americano de Westminster, Colorado, apaixonado por seu carro Ford Mustang amarelo, que ele mesmo restaurou. Em 1994, aos 17 anos, Mike tirou a própria vida dentro de seu carro, deixando um bilhete para seus pais pedindo que não se culpassem</p>
-            <p>A tragédia levou seus pais a iniciar uma campanha de conscientização sobre a prevenção do suicídio. No funeral de Mike, amigos e familiares distribuíram cartões presos a fitas amarelas com a mensagem "Se você precisar, peça ajuda". Esse gesto inspirou a criação da organização Yellow Ribbon, que promove a conscientização e prevenção do suicídio, ajudando milhares de pessoas ao redor do mundo.</p>
+ <p>Nascido em 1977 e conhecido como "Mustang Mike", era engraçado, se importava com os outros, tocava trompete em três bandas da escola, estava prestes a atingir sua "faixa preta" em TaeKwonDo. Tinha um Ford Mustang 1968 que ele pintou de amarelo brilhante. No dia 8 setembro de 1994, às 23:52 da noite, seus pais chegaram em casa e se depararam com uma cena que mudaria a vida de todos para sempre. Mike Emme estava morto dentro de seu tão amado mustang amarelo, em decorrência de um tiro. Ao seu lado um triste bilhete:
+ <br><b>“Mãe, pai, não se culpem. Eu amo vocês. Com amor, Mike. 11:45 pm”.</b> 
+           
     `
     },
 
@@ -104,15 +104,22 @@ const stuffsFromPeople = [
 
 //const temasAmarelos = [];
 
-/*setRandomText();//chamamos a função parar gerar o texto aleatorio
+setRandomText();//chamamos a função parar gerar o texto aleatorio
 
 function setRandomText() {
     randomText = stuffsFromPeople[Math.floor(Math.random() * stuffsFromPeople.length)]// estamos gerando um número aleatorio entre o primeiro e último elemento da array
 
     showPeopleText({ target: { id: randomText.id } })//abre a funcao showPeopleText passando como parâmetro a id do número gerado aleatoriamente
     //ele está criando um objeto que "simula" o click no botão
+
+    stuffsFromPeople.forEach(putBehavior => {
+        document.getElementById(putBehavior.id).addEventListener("mousedown", function () {
+            document.getElementById("peopleText").scrollIntoView({ behavior: "smooth", block: "start" })
+            document.getElementById("peoplesHub").scrollIntoView({ behavior: "smooth", block: "start" })
+        })
+    },100)//Adiciona o movimento de centralização ao clicar. Tem que ser após definir o texto aleatorio ou a pág centraliza até o texto ao ser carregada.
 };
-*/
+
 function cleanYellowBorder() {
     stuffsFromPeople.forEach(whatId => {
         document.getElementById(whatId.id).classList.remove("addBorderToElement")
@@ -141,8 +148,6 @@ function showPeopleText(event) {
             videoLink.setAttribute("src", "")//removemos a url ao sair da pessoa selecionada
 
     };
-    document.getElementById("peopleText").scrollIntoView({ behavior: "smooth", block: "start" })
-    document.getElementById("peoplesHub").scrollIntoView({ behavior: "smooth", block: "start" })
     //caso o "texto" da pessoa for um video, definimos a ULR e mostramos a div responsável por mostrar o player do Youtube
 };
 
@@ -162,41 +167,6 @@ function closeText() {
 };// se clicar duas vezes no texto, ele apaga o texto atual
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 function AIchat() {
     const textForAI = document.getElementById("chatInput").value;
@@ -214,30 +184,5 @@ function AIchat() {
             aiText.innerHTML = "Desculpe, ocorreu um erro inesperado. Não foi possível processar sua solicitação no momento. Por favor, tente novamente mais tarde ou entre em contato com o suporte se o problema persistir. Lembre-se, sua saúde mental é importante e existem pessoas dispostas a ajudar. Se precisar de apoio imediato, não hesite em buscar ajuda profissional ou ligar para o CVV (Centro de Valorização da Vida) no número 188.";
         }
     })();
-}
-*/
-
-/*document.addEventListener('mousemove', function(event) {
-    const menu = document.getElementById('menu');
-    const mouseX = event.clientX;
-    
-    if (mouseX < 50) {
-        menu.classList.add('show');//adiciona a classe show
-
-    } else {
-        if (!menu.matches(':hover') && mouseX > 250) {
-            menu.classList.remove('show');
-        }//remove a classe show 
-    }
-});
-
-document.getElementById('menu').addEventListener('mouseover', function() {
-    this.classList.add('show');
-});//menu aberto com o mouse em cima
-
-document.getElementById('menu').addEventListener('mouseout', function(event) {
-    if (!event.relatedTarget || !this.contains(event.relatedTarget)) {
-        this.classList.remove('show');
-    }
-});//fecha menu quando mouse sai
+} //Antigo Bot baseado em IA
 */
