@@ -104,7 +104,7 @@ const stuffsFromPeople = [
 
 //const temasAmarelos = [];
 
-setRandomText();//chamamos a função parar gerar o texto aleatorio
+/*setRandomText();//chamamos a função parar gerar o texto aleatorio
 
 function setRandomText() {
     randomText = stuffsFromPeople[Math.floor(Math.random() * stuffsFromPeople.length)]// estamos gerando um número aleatorio entre o primeiro e último elemento da array
@@ -112,7 +112,7 @@ function setRandomText() {
     showPeopleText({ target: { id: randomText.id } })//abre a funcao showPeopleText passando como parâmetro a id do número gerado aleatoriamente
     //ele está criando um objeto que "simula" o click no botão
 };
-
+*/
 function cleanYellowBorder() {
     stuffsFromPeople.forEach(whatId => {
         document.getElementById(whatId.id).classList.remove("addBorderToElement")
@@ -140,8 +140,11 @@ function showPeopleText(event) {
             videoDiv.classList.add("hidden");
             videoLink.setAttribute("src", "")//removemos a url ao sair da pessoa selecionada
 
-    }//caso o "texto" da pessoa for um video, definimos a ULR e mostramos a div responsável por mostrar o player do Youtube
-}
+    };
+    document.getElementById("peopleText").scrollIntoView({ behavior: "smooth", block: "start" })
+    document.getElementById("peoplesHub").scrollIntoView({ behavior: "smooth", block: "start" })
+    //caso o "texto" da pessoa for um video, definimos a ULR e mostramos a div responsável por mostrar o player do Youtube
+};
 
 document.getElementById("page").addEventListener("click", function () {
     if (document.getElementById("menu").classList.contains("show")) {
@@ -157,6 +160,43 @@ function closeText() {
     videoDiv.classList.add("hidden");
     videoLink.setAttribute("src", "")
 };// se clicar duas vezes no texto, ele apaga o texto atual
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 function AIchat() {
     const textForAI = document.getElementById("chatInput").value;
@@ -176,16 +216,6 @@ function AIchat() {
     })();
 }
 */
-
-
-
-
-
-
-
-
-
-
 
 /*document.addEventListener('mousemove', function(event) {
     const menu = document.getElementById('menu');

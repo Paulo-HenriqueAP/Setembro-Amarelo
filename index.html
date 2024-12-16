@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <button id="showMenu" onclick="menuON_OFF()"><img class="iconImg"
+            src="src/imgs/icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="≡"></button>
+    <br>
     <section id="page">
         <div class="banner">
             <span id="mainTitle">🎗️ Setembro Amarelo 🎗️
@@ -20,20 +23,21 @@
             <img src="src/imgs/bannerSA.jpg" alt="">
         </div>
         <main>
+            <df-messenger
+                chat-icon="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Paulo-HenriqueAP&#x2F;Setembro-Amarelo&#x2F;refs&#x2F;heads&#x2F;main&#x2F;src&#x2F;imgs&#x2F;people&#x2F;FofinPersona.ico"
+                intent="WELCOME" chat-title="Setembrina" agent-id="d64e8aeb-6276-4f0a-8e3a-fc54bcd8adc3"
+                language-code="pt-br"></df-messenger>
+
             <div id="text1">
                 <h1>Bem-vindo(a) ao site</h1>
                 <h4>
-                    <p>No mês de setembro, unimo-nos em uma missão essencial: promover a conscientização sobre a saúde
+                    <p>Temos uma missão essencial: promover a conscientização sobre a saúde
                         mental e a prevenção ao suicídio.</p>
                     <p>O Setembro Amarelo é um movimento que visa iluminar a importância da saúde mental, oferecendo
                         apoio, informação e recursos para todos que enfrentam dificuldades emocionais.</p>
-                    <p>Nosso site é um espaço dedicado a compartilhar conhecimento, histórias inspiradoras e ferramentas
-                        úteis para ajudar a construir uma rede de suporte.</p>
-                    <p>Aqui, você encontrará informações sobre como identificar sinais de alerta, onde buscar ajuda e
-                        como oferecer suporte a quem precisa.</p>
-                    <p>Acreditamos que a mudança começa com a informação e o diálogo aberto. Ao longo deste mês, e além
-                        dele, convidamos você a se juntar a nós nessa jornada para quebrar tabus, reduzir o estigma e,
-                        acima de tudo, salvar vidas.</p>
+                    <p>Aqui, você encontrará informações sobre como identificar sinais de alerta, onde buscar ajuda,
+                        como oferecer suporte a quem precisa, histórias inspiradoras e ferramentas
+                        úteis.</p>
                     <p>Juntos, podemos fazer a diferença e oferecer esperança a todos que precisam. Vamos usar o
                         setembro amarelo para fortalecer nossa comunidade e mostrar que, mesmo nos momentos mais
                         difíceis, ninguém está sozinho.</p>
@@ -54,23 +58,24 @@
                 <button onclick="AIchat()" style="padding: 6px; cursor: pointer;">perguntar</button>
             </div>
             -->
-            <df-messenger
-                chat-icon="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Paulo-HenriqueAP&#x2F;Setembro-Amarelo&#x2F;refs&#x2F;heads&#x2F;main&#x2F;src&#x2F;imgs&#x2F;people&#x2F;FofinPersona.ico"
-                intent="WELCOME" chat-title="Setembrina" agent-id="d64e8aeb-6276-4f0a-8e3a-fc54bcd8adc3"
-                language-code="pt-br"></df-messenger>
 
             <div id="text2">
                 <h1>Como tudo começou</h1>
                 <h4>
-                    <p>O Setembro Amarelo é uma campanha de conscientização sobre a prevenção do suicídio que começou no
-                        Brasil em 2014.</p>
-                    <p>A ideia surgiu a partir de uma iniciativa do Centro de Valorização da Vida (CVV), uma organização
-                        não governamental que oferece apoio emocional e prevenção ao suicídio.</p>
-                    <p>A escolha do mês de setembro e da cor amarela tem um significado especial. A cor amarela foi
-                        inspirada pela história de um jovem americano chamado Mike, que em 1994, após um acidente de
-                        carro, fez uma campanha para ajudar a prevenir o suicídio.</p>
-                    <p>Mike e sua família distribuíram fitas amarelas em memória de seu filho, que havia falecido. O
-                        amarelo simboliza a luz que a vida ainda tem, mesmo em momentos de grande escuridão.</p>
+                    <p>10 de setembro é a data dedicada ao Dia Mundial de Prevenção ao Suicídio. No Brasil, desde 2015 o
+                        mês passou a ser batizado de Setembro Amarelo por entidades que buscam conscientização sobre o
+                        tema.</p>
+                    <p>A campanha Yellow Ribbon (Laço Amarelo) começou nos EUA, depois que o jovem Mike Emme cometeu
+                        suicídio em 1994. Mike tinha 17 anos, era bastante habilidoso e restaurou um automóvel Mustang
+                        68, pintando-o de amarelo. Seus pais e amigos não perceberam que o jovem tinha problemas
+                        psicológicos e não conseguiram evitar sua morte.</p>
+                    <p>No dia do velório, cartões decorados com fitas amarelas foram colocados em uma cesta e tinham a
+                        mensagem "Se você precisar, peça ajuda". A iniciativa deu origem ao movimento importante de
+                        prevenção ao suicídio, pois os cartões chegaram às mãos de pessoas que precisavam de ajuda.</p>
+                    <p><a
+                            href="https://g1.globo.com/saude/saude-mental/noticia/2024/09/10/setembro-amarelo-pais-de-jovem-que-deu-origem-a-campanha-contam-que-dor-nao-tem-fim-e-alertam-se-precisar-peca-ajuda.ghtml">Confira
+                            a entrevista no G1 </a>
+                    </p>
                 </h4>
             </div>
 
@@ -98,15 +103,17 @@
                         profissionais da área da saúde mental no Brasil. Fundada em 1954, a ABP tem como principal
                         objetivo promover o desenvolvimento da psiquiatria e a melhoria das condições de saúde mental no
                         país.</p>
-                    <p>Objetivos e Atividades da ABP:</p>
+                    <p>Atividades da ABP:</p>
                     <ul>
-                        <li>Educação e Formação: Organiza congressos, cursos e eventos para a atualização e formação
-                            contínua dos profissionais da psiquiatria.</li>
-                        <li>Pesquisa e Desenvolvimento: Incentiva a pesquisa científica na área da psiquiatria e saúde
+                        <li>
+                            Organiza congressos, cursos e eventos para a atualização e formação
+                            contínua dos profissionais da psiquiatria.
+                        </li>
+                        <li>Incentiva a pesquisa científica na área da psiquiatria e saúde
                             mental.</li>
-                        <li>Defesa da Profissão: Trabalha na defesa dos interesses da psiquiatria e dos psiquiatras,
+                        <li>Trabalha na defesa dos interesses da psiquiatria e dos psiquiatras,
                             além de colaborar com a elaboração de políticas públicas.</li>
-                        <li>Orientação e Diretrizes: Publica diretrizes e orientações para a prática clínica e ética da
+                        <li>Publica diretrizes e orientações para a prática clínica e ética da
                             psiquiatria.</li>
                     </ul>
                     <p>Conselho Federal de Medicina (CFM) é o órgão regulador da profissão médica no Brasil, responsável
@@ -132,19 +139,19 @@
                 <h4>
                     <p>Alguns sinais de Alerta para Suicídio:</p>
                     <ul>
-                        <li>Mudanças de Comportamento: Isolamento social, descuido com a aparência, perda de interesse
+                        <li>Isolamento social, descuido com a aparência, perda de interesse
                             em atividades antes apreciadas.</li>
-                        <li>Fala sobre Morte: Comentários sobre querer morrer, frases como "Eu não vejo saída" ou "Seria
+                        <li>Comentários sobre querer morrer, frases como "Eu não vejo saída" ou "Seria
                             melhor se eu não estivesse aqui".</li>
-                        <li>Sentimentos de Desespero: Expressões de desesperança, inutilidade ou visão negativa do
+                        <li>Expressões de desesperança, inutilidade ou visão negativa do
                             futuro.</li>
-                        <li>Alterações de Humor: Mudanças bruscas de humor, como extrema tristeza, irritabilidade ou
+                        <li>Mudanças bruscas de humor, como extrema tristeza, irritabilidade ou
                             euforia repentina.</li>
-                        <li>Comportamento de Risco: Engajamento em comportamentos autodestrutivos, como abuso de
+                        <li>Engajamento em comportamentos autodestrutivos, como abuso de
                             substâncias ou automutilação.</li>
-                        <li>Preparação para a Morte: Organizar a vida, distribuir pertences importantes ou fazer planos
+                        <li>Organizar a vida, distribuir pertences importantes ou fazer planos
                             de despedida.</li>
-                        <li>Conflitos Não Resolvidos: Dificuldades emocionais intensas ou estresse relacionado a
+                        <li>Dificuldades emocionais intensas ou estresse relacionado a
                             problemas pessoais ou financeiros.</li>
                     </ul>
                 </h4>
@@ -155,15 +162,27 @@
                 <h4>
                     <p>
                     <ul>
-                        <li>Ouça com Empatia: Esteja disponível para ouvir sem julgamento, mostrando que se importa e
-                            que a pessoa pode falar abertamente.</li>
-                        <li>Encoraje a Busca de Ajuda: Sugira que procure um profissional de saúde mental, como um
-                            psicólogo ou psiquiatra.</li>
-                        <li>Ofereça Suporte Prático: Acompanhe a pessoa em consultas médicas, ajude com tarefas diárias
-                            ou ofereça apoio emocional contínuo.</li>
-                        <li>Mantenha Contato: Continue a oferecer apoio e check-ins regulares, mostrando que a pessoa
-                            não está sozinha.</li>
-                        <li>Intervenção Imediata: Se a situação for crítica e há risco iminente, entre em contato com
+                        <li>
+                            <h4>Ouça com Empatia</h4>
+                            Esteja disponível para ouvir sem julgamento, mostrando que se importa e
+                            que a pessoa pode falar abertamente.
+                        </li>
+                        <li>
+                            <h4>Encoraje a Busca de Ajuda</h4>
+                            Sugira que procure um profissional de saúde mental, como um
+                            psicólogo ou psiquiatra.
+                        </li>
+                        <li>
+                            <h4>Ofereça Suporte Prático</h4>
+                            Acompanhe a pessoa em consultas médicas, ajude com tarefas diárias
+                            ou ofereça apoio emocional contínuo.
+                        </li>
+                        <li>
+                            <h4>Mantenha Contato</h4>
+                            Continue a oferecer apoio e check-ins regulares, mostrando que a pessoa
+                            não está sozinha.
+                        </li>
+                        <li>Se a situação for crítica e há risco iminente, entre em contato com
                             serviços de emergência ou leve a pessoa ao hospital.</li>
                     </ul>
                     </p>
@@ -176,16 +195,23 @@
                     <p>
                     <ul>
                         <li>Centro de Valorização da Vida (CVV): Oferece apoio emocional e prevenção ao suicídio por
-                            meio de uma linha de apoio gratuita. Disponível 24/7 pelo telefone 188 ou através do site do
-                            CVV.</li>
-                        <li>Hospital ou Pronto-Socorro: Em situações de emergência, vá ao hospital mais próximo ou ligue
-                            para o serviço de emergência (192).</li>
-                        <li>Profissionais de Saúde Mental: Psiquiatras, psicólogos e terapeutas podem ser encontrados
-                            através de clínicas, hospitais ou recomendações de médicos.</li>
+                            meio de uma linha de apoio gratuita. Disponível 24/7 pelo telefone 188 ou através do <a
+                                href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">site do
+                                CVV.</a></li>
+                        <li style="text-align: center;">Em situações de emergência, vá ao hospital mais próximo ou ligue
+                            para:
+                            <p></p>
+                            <a href="tel:192"
+                                style="background-color: #ffd202; padding: 8px; border: 1px solid; border-radius: 3px;">192<img
+                                    class="iconImg" src="src/imgs/icons/bxs-phone-call.svg">
+                            </a>
+                            <p></p>
+                        </li>
                         <li>Conselho Federal de Medicina (CFM): Pode ajudar a encontrar recursos médicos e psicológicos.
-                            Acesse o site do CFM.</li>
-                        <li>Unidades de Saúde Pública: Postos de saúde e ambulatórios oferecem suporte psicológico e
-                            psiquiátrico, geralmente com atendimento gratuito.</li>
+                            Acesse o <a href="https://portal.cfm.org.br/busca-medicos" target="_blank"
+                                rel="noopener noreferrer">site do CFM.</a></li>
+                        <li>Psiquiatras, psicólogos e terapeutas podem ser encontrados em postos de saúde e
+                            ambulatórios.</li>
                     </ul>
                     </p>
                 </h4>
@@ -196,16 +222,16 @@
                 <h4>
                     <p>
                     <ul>
-                        <li>Educação e Conscientização: Compartilhe informações sobre prevenção do suicídio e participe
+                        <li>Compartilhe informações sobre prevenção do suicídio e participe
                             de eventos relacionados.</li>
-                        <li>Apoio e Empatia: Ofereça apoio emocional e promova uma cultura de compreensão sobre saúde
+                        <li>Ofereça apoio emocional e promova uma cultura de compreensão sobre saúde
                             mental.</li>
-                        <li>Ações Locais: Organize ou participe de atividades comunitárias, distribua materiais
+                        <li>Organize ou participe de atividades comunitárias, distribua materiais
                             informativos.</li>
-                        <li>Colaboração com Profissionais: Trabalhe com especialistas para oferecer workshops e apoie
+                        <li>Trabalhe com especialistas para oferecer workshops e apoie
                             organizações dedicadas à saúde mental.</li>
-                        <li>Promoção de Recursos: Divulgue linhas de apoio e serviços de emergência.</li>
-                        <li>Fomentar Discussão: Inicie conversas abertas sobre saúde mental para reduzir o estigma e
+                        <li>Divulgue linhas de apoio e serviços de emergência.</li>
+                        <li>Inicie conversas abertas sobre saúde mental para reduzir o estigma e
                             aumentar a compreensão.</li>
                     </ul>
                     </p>
@@ -217,44 +243,175 @@
                 <h4>
                     <p>
                     <ul>
-                        <li>Palestras e Seminários: Eventos educativos em escolas, universidades e empresas, onde
+                        <li>
+                            <h3>Palestras e Seminários</h3>
+                            Eventos educativos em escolas, universidades e empresas, onde
                             especialistas discutem temas relacionados à saúde mental, sinais de alerta e formas de
-                            ajuda.</li>
-                        <li>Caminhadas e Corridas: Atividades físicas organizadas para mobilizar a comunidade, muitas
+                            ajuda.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Caminhadas e Corridas</h3>
+                            Atividades físicas organizadas para mobilizar a comunidade, muitas
                             vezes com o objetivo de arrecadar fundos para instituições que trabalham com a prevenção do
-                            suicídio.</li>
-                        <li>Campanhas nas Redes Sociais: Posts, vídeos e mensagens de conscientização, muitas vezes
+                            suicídio.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Campanhas nas Redes Sociais</h3>
+                            Posts, vídeos e mensagens de conscientização, muitas vezes
                             utilizando a cor amarela e hashtags específicas para engajar o público e disseminar
-                            informações importantes.</li>
-                        <li>Workshops e Grupos de Apoio: Sessões interativas onde os participantes podem aprender mais
+                            informações importantes.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Workshops e Grupos de Apoio</h3>
+                            Sessões interativas onde os participantes podem aprender mais
                             sobre como lidar com questões de saúde mental e como apoiar pessoas próximas que possam
-                            estar passando por dificuldades.</li>
-                        <li>Ações em Hospitais e Centros de Saúde: Distribuição de materiais informativos, realização de
-                            atendimentos e suporte psicológico para pacientes e familiares.</li>
-                        <li>Eventos Culturais: Apresentações de teatro, música ou artes visuais que abordam temas
-                            relacionados à saúde mental e à prevenção do suicídio.</li>
-                        <li>Treinamentos para Profissionais: Capacitação de profissionais de saúde, educadores e outros
-                            membros da comunidade para identificar sinais de alerta e oferecer suporte adequado.</li>
-                        <li>Distribuição de Materiais Informativos: Cartilhas, panfletos e outros recursos que fornecem
-                            informações sobre a prevenção do suicídio e como buscar ajuda.</li>
+                            estar passando por dificuldades.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Ações em Hospitais e Centros de Saúde</h3>
+                            Distribuição de materiais informativos, realização de
+                            atendimentos e suporte psicológico para pacientes e familiares.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Eventos Culturais</h3>
+                            Apresentações de teatro, música ou artes visuais que abordam temas
+                            relacionados à saúde mental e à prevenção do suicídio.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Treinamentos para Profissionais</h3>
+                            Capacitação de profissionais de saúde, educadores e outros
+                            membros da comunidade para identificar sinais de alerta e oferecer suporte adequado.
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Distribuição de Materiais Informativos</h3>
+                            Cartilhas, panfletos e outros recursos que fornecem
+                            informações sobre a prevenção do suicídio e como buscar ajuda.
+                        </li>
                     </ul>
-                    Esses eventos são promovidos por diversas organizações, incluindo ONGs, instituições governamentais,
-                    escolas e empresas, com o objetivo de criar um ambiente de apoio e compreensão em torno das questões
-                    de saúde mental.
-                    Se você está interessado em participar ou organizar um evento, é uma boa ideia entrar em contato com
-                    instituições locais que trabalham com saúde mental para obter mais informações e apoio.
+                    <h3>
+                        Esses eventos são promovidos por diversas organizações, incluindo ONGs, instituições
+                        governamentais,
+                        escolas e empresas, com o objetivo de criar um ambiente de apoio e compreensão em torno das
+                        questões
+                        de saúde mental.
+                        Se você está interessado em participar ou organizar um evento, é uma boa ideia entrar em contato
+                        com
+                        instituições locais que trabalham com saúde mental para obter mais informações e apoio.
+                    </h3>
                     </p>
                 </h4>
+            </div>
+
+            <div id="peoplesHub">
+                <span>&nbsp;</span>
+                <h1>Histórias de Superação</h1>
+                <div style="max-height: 50vh; overflow: auto;">
+                    <p id="peopleText" ondblclick="closeText()">Selecione alguém ↴</p>
+                </div>
+
+                <div id="videoHub" class="hidden">
+                    <iframe id="setVideoURL" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <ul class="container">
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Demi Lovato</div>
+                        <div style="margin-top: 10px;">
+                            <img id="demi" class="peopleIMG" src="src/imgs/people/Demi_Lovato_2020.jpg"
+                                alt="Por Condé Nast (through Vogue Taiwan), CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=88816096">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Fabio Porchat</div>
+                        <div style="margin-top: 10px;">
+                            <img id="fabio" class="peopleIMG"
+                                src="src/imgs/people/Fábio_Porchat_at_Lady_Night_by_Humor_Multishow.jpg"
+                                alt="Por Multishow, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=134696543">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Tainã Oliveira</div>
+                        <div style="margin-top: 10px;">
+                            <img id="taina" class="peopleIMG" src="src/imgs/people/taina_perfil.jpg"
+                                alt="Foto: Tainã de Oliveira Silva/ Arquivo Pessoal">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Glaucia</div>
+                        <div style="margin-top: 10px;">
+                            <img id="glaucia" class="peopleIMG" src="src/imgs/people/glaucia.png"
+                                alt="Atacante Glaucia Youtube">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Mike Emme</div>
+                        <div style="margin-top: 10px;">
+                            <img id="mike" class="peopleIMG" src="src/imgs/people/mike.png">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Maria</div>
+                        <div style="margin-top: 10px;">
+                            <img id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg"
+                                alt="petalasdeliberdade.blogspot.com">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Eriko Kobayashi</div>
+                        <div style="margin-top: 10px;">
+                            <img id="eriko" class="peopleIMG" src="src/imgs/people/eriko.png">
+                        </div>
+                    </li>
+
+                    <li class="mainDiv" onclick="showPeopleText(event)">
+                        <div>Barbosa André</div>
+                        <div style="margin-top: 10px;">
+                            <img id="barbosa" class="peopleIMG" src="src/imgs/people/barbosa.jpg">
+                        </div>
+                    </li>
+                </ul>
             </div>
 
             <div id="text10">
                 <h1>Downloads</h1>
                 <ul>
                     <div>
+                        <iframe src="src/dow/HTMLpdf/Cartilha-Prevenção-ao-Suicídio.html" frameborder="0"
+                            class="downloadsIframe"></iframe>
                         <div>
-                            <iframe src="src/dow/HTMLpdf/Diretrizes-para-Divulgação-e-Participação.html" frameborder="0"
-                                class="downloadsIframe"></iframe>
+                            <h3><a href="src/dow/Cartilha Prevenção ao Suicídio.pdf" target="_blank"
+                                    rel="noopener noreferrer">Prevenção ao Suicídio <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                            </h3>
                         </div>
+                    </div>
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/camisa.png" class="downloadsIframe">
+                        <div>
+                            <h3><a href="src/dow/camisa.png" target="_blank" rel="noopener noreferrer">Modelo de Camisa
+                                    2024 <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe src="src/dow/HTMLpdf/Diretrizes-para-Divulgação-e-Participação.html" frameborder="0"
+                            class="downloadsIframe"></iframe>
                         <div>
                             <h3><a href="src/dow/Diretrizes para Divulgação e Participação.pdf" target="_blank"
                                     rel="noopener noreferrer">Diretrizes
@@ -264,23 +421,12 @@
                             </h3>
                         </div>
                     </div>
+                </ul>
+                <ul>
                     <div>
-                        <div>
-                            <iframe src="src/dow/HTMLpdf/Cartilha-Prevenção-ao-Suicídio.html" frameborder="0"
-                                class="downloadsIframe"></iframe>
-                        </div>
-                        <div>
-                            <h3><a href="src/dow/Cartilha Prevenção ao Suicídio.pdf" target="_blank"
-                                    rel="noopener noreferrer">Prevenção ao Suicídio <img class="iconImg"
-                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <iframe src="src/dow/HTMLpdf/Fatores-de-Risco-e-Sinais-de-Alerta.html" frameborder="0"
-                                class="downloadsIframe"></iframe>
-                        </div>
+                        <iframe src="src/dow/HTMLpdf/Fatores-de-Risco-e-Sinais-de-Alerta.html" frameborder="0"
+                            class="downloadsIframe"></iframe>
+
                         <div>
                             <h3><a href="src/dow/Fatores de Risco e Sinais de Alerta.pdf">Riscos e Sinais
                                     de Alerta <img class="iconImg"
@@ -289,10 +435,8 @@
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <iframe src="src/dow/HTMLpdf/Saúde-Mental-em-Crianças-e-Adolescentes.html" frameborder="0"
-                                class="downloadsIframe"></iframe>
-                        </div>
+                        <iframe src="src/dow/HTMLpdf/Saúde-Mental-em-Crianças-e-Adolescentes.html" frameborder="0"
+                            class="downloadsIframe"></iframe>
                         <div>
                             <h3><a href="src/dow/Saúde Mental em Crianças e Adolescentes.pdf" target="_blank"
                                     rel="noopener noreferrer">Saúde Mental <img class="iconImg"
@@ -301,114 +445,39 @@
                         </div>
                     </div>
                     <div>
+                        <iframe src="src/dow/HTMLpdf/Como-Oferecer-Ajuda.html" frameborder="0"
+                            class="downloadsIframe"></iframe>
                         <div>
-                            <iframe src="src/dow/HTMLpdf/Como-Oferecer-Ajuda.html" frameborder="0"
-                                class="downloadsIframe"></iframe>
-                        </div>
-                        <div>
-                            <h3><a href="src/dow/Como Oferecer Ajuda.html" target="_blank"
-                                    rel="noopener noreferrer">Como
+                            <h3><a href="src/dow/Como Oferecer Ajuda.pdf" target="_blank" rel="noopener noreferrer">Como
                                     Oferecer Ajuda <img class="iconImg"
                                         src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
                             </h3>
                         </div>
-
-                    </div>
-                    <div>
-                        <div>
-                            <img src="src/dow/Logo Oficial Setembro Amarelo 2024.png" class="downloadsIframe">
-                        </div>
-                        <div>
-                            <h3><a href="src/dow/Logo Oficial Setembro Amarelo 2024.png" target="_blank"
-                                    rel="noopener noreferrer">Logo 2024 <img class="iconImg"
-                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
-                            </h3>
-                        </div>
-
                     </div>
                 </ul>
             </div>
         </main>
-        <div id="peoplesHub">
-            <h1>Histórias de Superação <img class="iconImg"
-                    src="src/imgs/icons/close_fullscreen_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="❌"
-                    style="background-color: #ffd102; border-radius: 3px; cursor: pointer" onclick="closeText()"></h1>
-            <div style="max-height: 50vh; overflow: auto;">
-                <p id="peopleText" ondblclick="closeText()"></p>
-            </div>
-
-            <div id="videoHub" class="hidden">
-                <iframe id="setVideoURL" src="" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <ul class="container">
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Demi Lovato</div>
-                    <div style="margin-top: 10px;">
-                        <img id="demi" class="peopleIMG" src="src/imgs/people/Demi_Lovato_2020.jpg"
-                            alt="Por Condé Nast (through Vogue Taiwan), CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=88816096">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Fabio Porchat</div>
-                    <div style="margin-top: 10px;">
-                        <img id="fabio" class="peopleIMG"
-                            src="src/imgs/people/Fábio_Porchat_at_Lady_Night_by_Humor_Multishow.jpg"
-                            alt="Por Multishow, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=134696543">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Tainã Oliveira</div>
-                    <div style="margin-top: 10px;">
-                        <img id="taina" class="peopleIMG" src="src/imgs/people/taina_perfil.jpg"
-                            alt="Foto: Tainã de Oliveira Silva/ Arquivo Pessoal">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Glaucia</div>
-                    <div style="margin-top: 10px;">
-                        <img id="glaucia" class="peopleIMG" src="src/imgs/people/glaucia.png"
-                            alt="Atacante Glaucia Youtube">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Mike Emme</div>
-                    <div style="margin-top: 10px;">
-                        <img id="mike" class="peopleIMG" src="src/imgs/people/mike.png">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Maria</div>
-                    <div style="margin-top: 10px;">
-                        <img id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg"
-                            alt="petalasdeliberdade.blogspot.com">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Eriko Kobayashi</div>
-                    <div style="margin-top: 10px;">
-                        <img id="eriko" class="peopleIMG" src="src/imgs/people/eriko.png">
-                    </div>
-                </div>
-
-                <div class="mainDiv" onclick="showPeopleText(event)">
-                    <div>Barbosa André</div>
-                    <div style="margin-top: 10px;">
-                        <img id="barbosa" class="peopleIMG" src="src/imgs/people/barbosa.jpg">
-                    </div>
-                </div>
-            </ul>
+        <footer style="text-align: center;">
+            <p>
+                <img src="src/dow/Logo Oficial Setembro Amarelo 2024.png" alt="" style="width: 100px;">
+            </p>
+            <!--
+            <nav>
+                <form id="contato">
+                    <label>Nome</label>
+                    <input type="text" nome="nome" id="nome">
+                    <label>Email</label>
+                    <input type="email" nome="email" id="email">
+                    <label>Fale conosco:</label>
+                    <textarea row="6" id="faleconosco" nome="fale conosco"></textarea>
+                    <button type="submit"
+                        style="border: none; font-size: x-large; padding: 5px; cursor: pointer; background-color: #333; color: white; border-radius: 3px;">Enviar</button>
+                </form>
+            </nav>
+            -->
+        </footer>
     </section>
-    <button id="showMenu" onclick="menuON_OFF()"><img class="iconImg"
-            src="src/imgs/icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="≡"></button>
+
     <div id="menu">
         <ul><button id="hideMenu" onclick="menuON_OFF()"><img class="iconImg"
                     src="src/imgs/icons/arrow_back_ios_new_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="❌"></button>
@@ -426,20 +495,8 @@
             <li><a href="#text9" onclick="menuON_OFF()">Eventos</a></li>
             <li><a href="#text10" onclick="menuON_OFF()">Downloads</a></li>
             <li><a href="#peoplesHub" onclick="menuON_OFF()">Histórias de Superação</a></li>
-
-            <form id="contato">
-                <label>Nome</label>
-                <input type="text" nome="nome" id="nome">
-                <label>Email</label>
-                <input type="email" nome="email" id="email">
-                <label>Fale conosco:</label>
-                <textarea row="6" id="faleconosco" nome="fale conosco"></textarea>
-                <button type="submit"
-                    style="border: none; font-size: x-large; padding: 5px; cursor: pointer; background-color: #333; color: white; border-radius: 3px;">Enviar</button>
-            </form>
         </ul>
     </div>
-
 </body>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <!--<script src="https://js.puter.com/v2/"></script>-->
