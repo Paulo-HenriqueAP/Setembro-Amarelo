@@ -84,6 +84,7 @@ const stuffsFromPeople = [
         <p>No último ano eu tive dias de muito choro, onde novamente a vontade de acabar comigo apareceu, mas essas duas décadas e meia de existência me ensinaram que esses momentos passam para mim. E quando dias difíceis chegam, eu deixo as lágrimas saírem e espero, penso em tudo o que há na Terra e que eu amo: a minha família, os meus livros, as histórias que eu ainda quero ler e escrever. Diversas vezes já esqueci momentaneamente minhas tristezas nas páginas de alguma trama que eu nunca viveria, mas que me distraiam. Mantenho um diário, pois me lembrar do que aconteceu nos anos anteriores me ajuda a ver o quanto já sobrevivi. Leio de tudo, pois tanto um livro de terror quanto um romance podem despertar emoções em mim; ouço todo tipo de música, pois cada uma pode mexer uma parte do meu corpo; experimento todos os tipos de sorvete e de comidas, ainda que tenha meus preferidos. Quando bate a ansiedade, penso no pior e no melhor que pode acontecer, e me lembro que o que importa é tentar (confesso que sempre tento ter um plano B).</p>
         <p>Eu não sei exatamente o que viverei nos próximos anos. Não sei se há uma cura definitiva. Como o Wolf de "A Montanha" tem como lema: sei que "haverá oscilações", sei que posso novamente me sentir muito triste e cansada, sei que posso ter semanas terríveis onde o fim pode parecer a saída mais fácil. Mas enquanto esses dias não chegam, vou me abastecendo de pedacinhos de felicidade, vou traçando objetivos que parecem irreais para o meu lado pessimista, mas que podem acontecer se eu for atrás nessa era cheia de possibilidades, tento me limpar dos pensamentos e sentimentos ruins e tecer uma corda, não como uma forca, mas como algo para me prender à vida.</p>
         <p>Se você conhece alguém que pode estar pensando em suicídio, esteja atento, esteja presente. Acompanhamento médico/psicológico pode ajudar muito, mas para isso é preciso que ele seja buscado. Se você cogita a possibilidade do suicídio, acredite que SEMPRE há outras alternativas, sempre há algo que valerá a pena viver para ver. Nossa vida importa, tem valor, temos um espaço no mundo, podemos fazer a diferença.</p>
+        <a href="https://petalasdeliberdade.blogspot.com/2017/09/setembro-amarelo-um-relato-sobre-minha.html" target="blank" rel="noopener noreferrer">Confira o blog<a>
         `
     },
 
@@ -117,7 +118,7 @@ function setRandomText() {
             document.getElementById("peopleText").scrollIntoView({ behavior: "smooth", block: "start" })
             document.getElementById("peoplesHub").scrollIntoView({ behavior: "smooth", block: "start" })
         })
-    },100)//Adiciona o movimento de centralização ao clicar. Tem que ser após definir o texto aleatorio ou a pág centraliza até o texto ao ser carregada.
+    }, 100)//Adiciona o movimento de centralização ao clicar. Tem que ser após definir o texto aleatorio ou a pág centraliza até o texto ao ser carregada.
 };
 
 function cleanYellowBorder() {
@@ -164,8 +165,16 @@ function closeText() {
     cleanYellowBorder();
     videoDiv.classList.add("hidden");
     videoLink.setAttribute("src", "")
-};// se clicar duas vezes no texto, ele apaga o texto atual
+};// se clicar duas vezes no texto, ele apaga
 
+
+let i = 0;
+function simpleCarousel(imgSrc, max, direction) {
+    direction == "-" ? i-- : i++;
+    i > max ? i = 0 : null
+    i < 0 ? i = max : null
+    document.getElementById(imgSrc).setAttribute("src", `src/dow/HTMLpdf/${imgSrc}/${i}.webp`);
+};//definimos os nomes dos arquivos entre 0 e max, armazenamos em uma pasta com o mesmo id. essa funcao recebe os parametros e executa.
 
 /*
 function AIchat() {

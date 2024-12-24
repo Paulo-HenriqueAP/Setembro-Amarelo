@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎗️ Setembro Amarelo - Prevenção ao Suicídio</title>
+    <title>Setembro Amarelo</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="shortcut icon" href="src/imgs/icons/favicon.ico">
 </head>
 
 <body>
-    <button id="showMenu" onclick="menuON_OFF()"><img class="iconImg"
-            src="src/imgs/icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="≡"></button>
+    <div id="showMenu"><img class="iconImg" onclick="menuON_OFF()"
+            src="src/imgs/icons/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="≡" style="cursor: pointer;"></div>
     <br>
     <section id="page">
         <div class="banner">
@@ -72,9 +73,9 @@
                     <p>No dia do velório, cartões decorados com fitas amarelas foram colocados em uma cesta e tinham a
                         mensagem "Se você precisar, peça ajuda". A iniciativa deu origem ao movimento importante de
                         prevenção ao suicídio, pois os cartões chegaram às mãos de pessoas que precisavam de ajuda.</p>
-                    <p><a
-                            href="https://g1.globo.com/saude/saude-mental/noticia/2024/09/10/setembro-amarelo-pais-de-jovem-que-deu-origem-a-campanha-contam-que-dor-nao-tem-fim-e-alertam-se-precisar-peca-ajuda.ghtml">Confira
-                            a entrevista no G1 </a>
+                    <p><a href="https://g1.globo.com/saude/saude-mental/noticia/2024/09/10/setembro-amarelo-pais-de-jovem-que-deu-origem-a-campanha-contam-que-dor-nao-tem-fim-e-alertam-se-precisar-peca-ajuda.ghtml"
+                            target="_blank" rel="noopener noreferrer">
+                            Confira a entrevista com os pais do Mike no G1 </a>
                     </p>
                 </h4>
             </div>
@@ -95,7 +96,6 @@
                     </ul>
                 </h4>
             </div>
-
             <div id="text4">
                 <h1>Organizadores</h1>
                 <h4>
@@ -133,7 +133,6 @@
                     </ul>
                 </h4>
             </div>
-
             <div id="text5">
                 <h1>Sinais de alerta</h1>
                 <h4>
@@ -195,8 +194,9 @@
                     <p>
                     <ul>
                         <li>Centro de Valorização da Vida (CVV): Oferece apoio emocional e prevenção ao suicídio por
-                            meio de uma linha de apoio gratuita. Disponível 24/7 pelo telefone 188 ou através do <a
-                                href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">site do
+                            meio de uma linha de apoio gratuita. Disponível 24/7 pelo <a href="tel:188">telefone 188</a>
+                            ou através do <a href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">site
+                                do
                                 CVV.</a></li>
                         <li style="text-align: center;">Em situações de emergência, vá ao hospital mais próximo ou ligue
                             para:
@@ -323,65 +323,65 @@
                 </div>
 
                 <ul class="container">
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Demi Lovato</div>
                         <div style="margin-top: 10px;">
-                            <img id="demi" class="peopleIMG" src="src/imgs/people/Demi_Lovato_2020.jpg"
+                            <img  onclick="showPeopleText(event)" id="demi" class="peopleIMG" src="src/imgs/people/Demi_Lovato_2020.jpg"
                                 alt="Por Condé Nast (through Vogue Taiwan), CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=88816096">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Fabio Porchat</div>
                         <div style="margin-top: 10px;">
-                            <img id="fabio" class="peopleIMG"
+                            <img onclick="showPeopleText(event)" id="fabio" class="peopleIMG"
                                 src="src/imgs/people/Fábio_Porchat_at_Lady_Night_by_Humor_Multishow.jpg"
                                 alt="Por Multishow, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=134696543">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Tainã Oliveira</div>
                         <div style="margin-top: 10px;">
-                            <img id="taina" class="peopleIMG" src="src/imgs/people/taina_perfil.jpg"
+                            <img onclick="showPeopleText(event)" id="taina" class="peopleIMG" src="src/imgs/people/taina_perfil.jpg"
                                 alt="Foto: Tainã de Oliveira Silva/ Arquivo Pessoal">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Glaucia</div>
                         <div style="margin-top: 10px;">
-                            <img id="glaucia" class="peopleIMG" src="src/imgs/people/glaucia.png"
+                            <img onclick="showPeopleText(event)" id="glaucia" class="peopleIMG" src="src/imgs/people/glaucia.png"
                                 alt="Atacante Glaucia Youtube">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Mike Emme</div>
                         <div style="margin-top: 10px;">
-                            <img id="mike" class="peopleIMG" src="src/imgs/people/mike.png">
+                            <img onclick="showPeopleText(event)" id="mike" class="peopleIMG" src="src/imgs/people/mike.png">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Maria</div>
                         <div style="margin-top: 10px;">
-                            <img id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg"
+                            <img onclick="showPeopleText(event)" id="maria" class="peopleIMG" src="src/imgs/people/maria.jpg"
                                 alt="petalasdeliberdade.blogspot.com">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv">
                         <div>Eriko Kobayashi</div>
                         <div style="margin-top: 10px;">
-                            <img id="eriko" class="peopleIMG" src="src/imgs/people/eriko.png">
+                            <img onclick="showPeopleText(event)" id="eriko" class="peopleIMG" src="src/imgs/people/eriko.png">
                         </div>
                     </li>
 
-                    <li class="mainDiv" onclick="showPeopleText(event)">
+                    <li class="mainDiv" >
                         <div>Barbosa André</div>
                         <div style="margin-top: 10px;">
-                            <img id="barbosa" class="peopleIMG" src="src/imgs/people/barbosa.jpg">
+                            <img onclick="showPeopleText(event)" id="barbosa" class="peopleIMG" src="src/imgs/people/barbosa.jpg">
                         </div>
                     </li>
                 </ul>
@@ -390,66 +390,117 @@
             <div id="text10">
                 <h1>Downloads</h1>
                 <ul>
-                    <div>
-                        <iframe src="src/dow/HTMLpdf/Cartilha-Prevenção-ao-Suicídio.html" frameborder="0"
-                            class="downloadsIframe"></iframe>
-                        <div>
-                            <h3><a href="src/dow/Cartilha Prevenção ao Suicídio.pdf" target="_blank"
-                                    rel="noopener noreferrer">Prevenção ao Suicídio <img class="iconImg"
-                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
-                            </h3>
-                        </div>
-                    </div>
                     <div style="max-width: max-content;">
-                        <img src="src/dow/camisa.png" class="downloadsIframe">
+                        <img src="src/dow/HTMLpdf/infosIM/0.webp" class="downloadsIframe" id="infosIM"></img>
                         <div>
-                            <h3><a href="src/dow/camisa.png" target="_blank" rel="noopener noreferrer">Modelo de Camisa
-                                    2024 <img class="iconImg"
+                            <h3 style="display: inline-flex;">
+                                <button class="directionButton" onmousedown="simpleCarousel('infosIM', 4, '-')">
+                                    <img src="src/imgs/icons/bx-chevron-left.svg" alt="⇦">
+                                </button>
+                                <a href="src/dow/cartilha_infos_importantes.pdf" target="_blank">Infos importantes
+                                    <img class="iconImg"
                                         src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                                <button class="directionButton" onmousedown="simpleCarousel('infosIM',4, '+')">
+                                    <img src="src/imgs/icons/bx-chevron-right.svg" alt="⇨">
+                                </button>
                             </h3>
                         </div>
                     </div>
-                    <div>
-                        <iframe src="src/dow/HTMLpdf/Diretrizes-para-Divulgação-e-Participação.html" frameborder="0"
-                            class="downloadsIframe"></iframe>
+
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/HTMLpdf/oferecerAJ/0.webp" class="downloadsIframe" id="oferecerAJ"></img>
                         <div>
-                            <h3><a href="src/dow/Diretrizes para Divulgação e Participação.pdf" target="_blank"
-                                    rel="noopener noreferrer">Diretrizes
-                                    <img class="iconImg"
-                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
-                                </a>
+                            <h3 style="display: inline-flex;">
+                                <button class="directionButton" onmousedown="simpleCarousel('oferecerAJ', 13, '-')">
+                                    <img src="src/imgs/icons/bx-chevron-left.svg" alt="⇦">
+                                </button>
+                                <a href="src/dow/Como Oferecer Ajuda.pdf" target="_blank" rel="noopener noreferrer">Como
+                                    Ajudar <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                                <button class="directionButton" onmousedown="simpleCarousel('oferecerAJ', 13, '+')">
+                                    <img src="src/imgs/icons/bx-chevron-right.svg" alt="⇨">
+                                </button>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/HTMLpdf/saudeME/0.webp" class="downloadsIframe" id="saudeME"></img>
+                        <div>
+                            <h3 style="display: inline-flex;">
+                                <button class="directionButton" onmousedown="simpleCarousel('saudeME', 10, '-')">
+                                    <img src="src/imgs/icons/bx-chevron-left.svg" alt="⇦">
+                                </button>
+                                <a href="src/dow/Saúde Mental em Crianças e Adolescentes.pdf" target="_blank"
+                                    rel="noopener noreferrer">Saúde Mental <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                                <button class="directionButton" onmousedown="simpleCarousel('saudeME', 10, '+')">
+                                    <img src="src/imgs/icons/bx-chevron-right.svg" alt="⇨">
+                                </button>
                             </h3>
                         </div>
                     </div>
                 </ul>
                 <ul>
-                    <div>
-                        <iframe src="src/dow/HTMLpdf/Fatores-de-Risco-e-Sinais-de-Alerta.html" frameborder="0"
-                            class="downloadsIframe"></iframe>
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/HTMLpdf/fatores/0.webp" class="downloadsIframe" id="fatores"></img>
+                        <div>
+                            <h3 style="display: inline-flex;">
+                                <button class="directionButton" onmousedown="simpleCarousel('fatores', 1, '-')">
+                                    <img src="src/imgs/icons/bx-chevron-left.svg" alt="⇦">
+                                </button>
+                                <a href="src/dow/Fatores de Risco e Sinais de Alerta.pdf" target="_blank">Riscos e
+                                    Sinais
+                                    <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                                <button class="directionButton" onmousedown="simpleCarousel('fatores', 1, '+')">
+                                    <img src="src/imgs/icons/bx-chevron-right.svg" alt="⇨">
+                                </button>
+                            </h3>
+                        </div>
+                    </div>
 
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/HTMLpdf/diretrizes/0.webp" class="downloadsIframe" id="diretrizes"></img>
                         <div>
-                            <h3><a href="src/dow/Fatores de Risco e Sinais de Alerta.pdf">Riscos e Sinais
-                                    de Alerta <img class="iconImg"
+                            <h3 style="display: inline-flex;">
+                                <button class="directionButton" onmousedown="simpleCarousel('diretrizes', 4, '-')">
+                                    <img src="src/imgs/icons/bx-chevron-left.svg" alt="⇦">
+                                </button>
+
+                                <a href="src/dow/Diretrizes para Divulgação e Participação.pdf" target="_blank"
+                                    rel="noopener noreferrer">Diretrizes
+                                    <img class="iconImg"
+                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                                </a>
+
+                                <button class="directionButton" onmousedown="simpleCarousel('diretrizes', 4, '+')">
+                                    <img src="src/imgs/icons/bx-chevron-right.svg" alt="⇨">
+                                </button>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div style="max-width: max-content;">
+                        <img src="src/dow/camisa.png" class="downloadsIframe">
+                        <div>
+                            <h3 style="display: inline-flex;"><a href="src/dow/camisa.png" target="_blank" rel="noopener noreferrer">Modelo de
+                                    Camisa
+                                    2024 <img class="iconImg"
                                         src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
                             </h3>
                         </div>
                     </div>
-                    <div>
-                        <iframe src="src/dow/HTMLpdf/Saúde-Mental-em-Crianças-e-Adolescentes.html" frameborder="0"
-                            class="downloadsIframe"></iframe>
+                </ul>
+
+                <ul>
+                    <div style="max-width: max-content;">
+                        <iframe src="src/dow/HTMLpdf/Cartilha-Prevenção-ao-Suicídio.html" frameborder="0"
+                            class="downloadsIframe" style="margin-left: 50px; margin-right: 50px;"
+                            height="430px"></iframe>
                         <div>
-                            <h3><a href="src/dow/Saúde Mental em Crianças e Adolescentes.pdf" target="_blank"
-                                    rel="noopener noreferrer">Saúde Mental <img class="iconImg"
-                                        src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div>
-                        <iframe src="src/dow/HTMLpdf/Como-Oferecer-Ajuda.html" frameborder="0"
-                            class="downloadsIframe"></iframe>
-                        <div>
-                            <h3><a href="src/dow/Como Oferecer Ajuda.pdf" target="_blank" rel="noopener noreferrer">Como
-                                    Oferecer Ajuda <img class="iconImg"
+                            <h3 style="display: inline-flex;"><a href="src/dow/Cartilha Prevenção ao Suicídio.pdf" target="_blank"
+                                    rel="noopener noreferrer">Prevenção ao Suicídio <img class="iconImg"
                                         src="src/imgs/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></a>
                             </h3>
                         </div>
@@ -493,8 +544,8 @@
             <li><a href="#text7" onclick="menuON_OFF()">Onde buscar ajuda</a></li>
             <li><a href="#text8" onclick="menuON_OFF()">Como a comunidade pode ajudar</a></li>
             <li><a href="#text9" onclick="menuON_OFF()">Eventos</a></li>
-            <li><a href="#text10" onclick="menuON_OFF()">Downloads</a></li>
             <li><a href="#peoplesHub" onclick="menuON_OFF()">Histórias de Superação</a></li>
+            <li><a href="#text10" onclick="menuON_OFF()">Downloads</a></li>
         </ul>
     </div>
 </body>
